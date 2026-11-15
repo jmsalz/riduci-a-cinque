@@ -132,47 +132,47 @@ const PUZZLES = [
   {
     s: "С повинной в полицию явился вчера бывший студент Родион Раскольников, которого следователь Порфирий Петрович уже подозревал в том, что это он зарубил топором старуху-процентщицу и её сводную сестру Лизавету.",
     a: ["бывший", "студент", "явился", "с", "повинной"], ad: "Бывший студент явился с повинной",
-    alts: [["студент", "раскольников", "явился", "с", "повинной"], ["родион", "раскольников", "явился", "с", "повинной"]],
-    why: "Убийство громче, но ему уже две недели; сегодняшняя новость — явка с повинной. Топор и процентщица — приманка. Принимаются и варианты с именем: «Студент Раскольников явился с повинной» и «Родион Раскольников явился с повинной».",
+    alts: [["студент", "раскольников", "явился", "с", "повинной"], ["родион", "раскольников", "явился", "с", "повинной"], ["раскольников", "вчера", "явился", "с", "повинной"], ["студент", "вчера", "явился", "с", "повинной"], ["вчера", "раскольников", "явился", "с", "повинной"], ["с", "повинной", "явился", "бывший", "студент"], ["с", "повинной", "явился", "студент", "раскольников"]],
+    why: "Убийство громче, но ему уже две недели; сегодняшняя новость — явка с повинной. Топор и процентщица — приманка. Принимаются варианты с именем, со словом «вчера» и с инверсией: «С повинной явился бывший студент».",
     en: "Former student Rodion Raskolnikov turned himself in to the police yesterday; investigator Porfiry Petrovich already suspected him of the axe murders of an old pawnbroker and her half-sister Lizaveta.",
     enA: "Former student turns himself in",
-    enWhy: "The murder is louder, but it’s two weeks old; today’s news is the confession. The axe and the pawnbroker are the bait. Versions with his name are also accepted."
+    enWhy: "The murder is louder, but it’s two weeks old; today’s news is the confession. The axe and the pawnbroker are the bait. Versions with his name, with “yesterday,” and with inverted order (“Turned himself in: former student”) are also accepted."
   },
   {
     s: "Под товарный поезд на станции Обираловка, по словам очевидцев, бросилась Анна Каренина — жена видного петербургского сановника, в последнее время открыто жившая с графом Вронским.",
     a: ["анна", "каренина", "бросилась", "под", "поезд"], ad: "Анна Каренина бросилась под поезд",
-    alts: [["каренина", "бросилась", "под", "товарный", "поезд"]],
-    why: "Предложение начинается с поезда, а имя стоит в конце, так что заголовок придётся собрать заново. Вронский — то, о чём будут сплетничать, но не само событие. Принимается и «Каренина бросилась под товарный поезд».",
+    alts: [["каренина", "бросилась", "под", "товарный", "поезд"], ["под", "поезд", "бросилась", "анна", "каренина"], ["под", "товарный", "поезд", "бросилась", "каренина"], ["жена", "сановника", "бросилась", "под", "поезд"]],
+    why: "Предложение начинается с поезда, а имя стоит в конце, так что заголовок придётся собрать заново. Вронский — то, о чём будут сплетничать, но не само событие. Принимаются и «Под поезд бросилась Анна Каренина», и газетное «Жена сановника бросилась под поезд».",
     en: "According to witnesses, Anna Karenina threw herself under a freight train at Obiralovka station; she was the wife of a prominent Petersburg official and had lately been living openly with Count Vronsky.",
     enA: "Anna Karenina throws herself under a train",
-    enWhy: "The sentence opens with the train and names her last, so the headline has to be reassembled. Vronsky is the gossip, not the event. “Karenina throws herself under a freight train” is also accepted."
+    enWhy: "The sentence opens with the train and names her last, so the headline has to be reassembled. Vronsky is the gossip, not the event. “Under a train threw herself Anna Karenina” (inverted) and the society-page “Official’s wife throws herself under train” are also accepted."
   },
   {
     s: "Коллежский асессор Ковалёв, называющий себя майором, пытался дать в газету объявление о пропаже носа: по его словам, в мундире статского советника разъезжает теперь по Петербургу его собственный нос.",
     a: ["нос", "разъезжает", "в", "мундире", "советника"], ad: "Нос разъезжает в мундире советника",
-    alts: [["нос", "разъезжает", "теперь", "по", "петербургу"]],
-    why: "Абсурд и есть заголовок. Ловушка — «майором»: Ковалёв вовсе не майор, а коллежский асессор. «Носа» тоже не подойдёт: нужна форма «нос». Принимается и «Нос разъезжает теперь по Петербургу».",
+    alts: [["нос", "разъезжает", "теперь", "по", "петербургу"], ["теперь", "нос", "разъезжает", "по", "петербургу"], ["в", "мундире", "советника", "разъезжает", "нос"], ["нос", "в", "мундире", "статского", "советника"]],
+    why: "Абсурд и есть заголовок. Ловушка — «майором»: Ковалёв вовсе не майор, а коллежский асессор. «Носа» тоже не подойдёт: нужна форма «нос». Принимаются и «Нос разъезжает теперь по Петербургу», и заголовок без глагола: «Нос в мундире статского советника».",
     en: "Collegiate assessor Kovalyov, who calls himself a major, tried to place a newspaper ad about his missing nose: he says his own nose is now riding around Petersburg in the uniform of a state councillor.",
     enA: "Nose rides around in a councillor’s uniform",
-    enWhy: "The absurdity is the headline. The trap is “major”: Kovalyov isn’t one. “Nose now riding around Petersburg” is also accepted."
+    enWhy: "The absurdity is the headline. The trap is “major”: Kovalyov isn’t one. “Nose now riding around Petersburg” and the verbless “Nose in a state councillor’s uniform” are also accepted."
   },
   {
     s: "Скончался у себя дома мелкий чиновник Иван Червяков, чихнувший на днях в театре на лысину статского генерала Бризжалова: он несколько раз ходил извиняться, пока генерал не прогнал его криком «Пошёл вон!»",
     a: ["чихнувший", "на", "генерала", "чиновник", "скончался"], ad: "Чихнувший на генерала чиновник скончался",
-    alts: [["чиновник", "чихнувший", "на", "генерала", "скончался"], ["скончался", "чихнувший", "на", "генерала", "чиновник"]],
-    why: "Все пять слов есть в предложении, но в другом порядке: хорошая проверка причастных оборотов. Ловушка — «лысину», самая смешная деталь и самая ненужная. Принимаются и перестановки: «Чиновник, чихнувший на генерала, скончался» и «Скончался чихнувший на генерала чиновник».",
+    alts: [["чиновник", "чихнувший", "на", "генерала", "скончался"], ["скончался", "чихнувший", "на", "генерала", "чиновник"], ["скончался", "чиновник", "чихнувший", "на", "генерала"], ["чихнувший", "в", "театре", "чиновник", "скончался"], ["чихнувший", "на", "генерала", "червяков", "скончался"]],
+    why: "Все пять слов есть в предложении, но в другом порядке: хорошая проверка причастных оборотов. Ловушка — «лысину», самая смешная деталь и самая ненужная. Принимаются перестановки, а также «Чихнувший в театре чиновник скончался» и вариант с фамилией Червякова.",
     en: "Minor official Ivan Chervyakov has died at home; a few days ago at the theater he sneezed on the bald head of civilian general Brizzhalov, and went to apologize several times until the general drove him off with a shout of “Get out!”",
     enA: "Official who sneezed on general dies",
-    enWhy: "All five words are there, in a different order: a good test of Russian participle phrases. The trap is “bald head,” the funniest detail and the least necessary. Reorderings are also accepted."
+    enWhy: "All five words are there, in a different order: a good test of Russian participle phrases. The trap is “bald head,” the funniest detail and the least necessary. Reorderings, “Official who sneezed in the theater dies,” and a version with Chervyakov’s name are also accepted."
   },
   {
     s: "Михаилу Берлиозу, председателю МАССОЛИТа, поскользнувшемуся на подсолнечном масле, которое разлила некая Аннушка, на Патриарших прудах отрезало голову трамваем — а незадолго до этого незнакомый иностранец предсказал ему именно такую смерть.",
     a: ["председателю", "массолита", "трамваем", "отрезало", "голову"], ad: "Председателю МАССОЛИТа трамваем отрезало голову",
-    alts: [["председателю", "массолита", "отрезало", "голову", "трамваем"], ["михаилу", "берлиозу", "трамваем", "отрезало", "голову"], ["михаилу", "берлиозу", "отрезало", "голову", "трамваем"]],
-    why: "Спорный вопрос — что важнее: смерть или предсказание; жёлтая пресса начала бы с иностранца. Масло Аннушки — самая знаменитая деталь, но это причина, а не событие. Принимаются варианты с именем Берлиоза и с «трамваем» в конце.",
+    alts: [["председателю", "массолита", "отрезало", "голову", "трамваем"], ["михаилу", "берлиозу", "трамваем", "отрезало", "голову"], ["михаилу", "берлиозу", "отрезало", "голову", "трамваем"], ["иностранец", "предсказал", "председателю", "массолита", "смерть"], ["иностранец", "предсказал", "смерть", "председателю", "массолита"], ["иностранец", "предсказал", "михаилу", "берлиозу", "смерть"], ["трамваем", "отрезало", "голову", "председателю", "массолита"], ["иностранец", "предсказал", "смерть", "михаилу", "берлиозу"], ["берлиозу", "отрезало", "голову", "на", "патриарших"]],
+    why: "Спорный вопрос — что важнее: смерть или предсказание; жёлтая пресса начала бы с иностранца. Масло Аннушки — самая знаменитая деталь, но это причина, а не событие. Принимаются варианты с именем Берлиоза и с «трамваем» в конце, «Берлиозу отрезало голову на Патриарших», а также версия жёлтой прессы: «Иностранец предсказал председателю МАССОЛИТа смерть».",
     en: "Mikhail Berlioz, chairman of MASSOLIT, slipped on sunflower oil spilled by a certain Annushka and had his head cut off by a tram at Patriarch’s Ponds; shortly before, an unknown foreigner had predicted exactly this death.",
     enA: "Tram cuts off MASSOLIT chairman’s head",
-    enWhy: "The real debate is which matters more, the death or the prediction; a tabloid would lead with the foreigner. Annushka’s oil is the most famous detail, but it’s the cause, not the event. Versions with Berlioz’s name and with “tram” at the end are also accepted."
+    enWhy: "The real debate is which matters more, the death or the prediction; a tabloid would lead with the foreigner. Annushka’s oil is the most famous detail, but it’s the cause, not the event. Versions with Berlioz’s name and with “tram” at the end are also accepted, as are “Berlioz’s head cut off at Patriarch’s” and the tabloid version: “Foreigner predicted MASSOLIT chairman’s death.”"
   }
 ];
 
